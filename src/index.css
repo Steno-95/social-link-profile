@@ -1,16 +1,15 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600,700;1,14..32,600,700&display=swap");
 
 :root {
-  font-family: "Inter", "Courier New", Courier, monospace;
-  --main-bg-color: rgb(20, 20, 20);
-  --card-bg-color: hsl(0, 0%, 12%);
-  --link-bg-color: hsl(0, 0%, 20%);
+  font-family: "Inter", sans-serif;
+  --main-bg: rgb(20, 20, 20);
+  --card-bg: rgb(31, 31, 31);
+  --link-bg: rgb(51, 51, 51);
   --text-white: hsl(0, 0%, 100%);
   --text-green: hsl(75, 94%, 57%);
 }
 
 body {
-  font-size: 62.5%;
-  background-color: var(--main-bg-color);
+  font-size: calc(0.5em + 1vmin);
+  background-color: var(--main-bg);
 }
