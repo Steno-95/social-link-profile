@@ -30,13 +30,13 @@ const links = [
 
 function Menu() {
   return (
-    <ul className="flex flex-col gap-3 items-center justify-center">
+    <div className="flex flex-col gap-3 items-center justify-center">
       {links.map((link) => (
         <Button href={link.link} key={link.id}>
           {link.text}
         </Button>
       ))}
-    </ul>
+    </div>
   );
 }
 
