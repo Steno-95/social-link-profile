@@ -4,7 +4,7 @@ function ProfilePicture({ img }) {
       <img
         src={`/images/${img}`}
         alt="profile picture of the user"
-        className="w-full"
+        className="w-full h-full"
       />
     </figure>
   );

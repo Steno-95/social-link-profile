@@ -1,19 +1,19 @@
 function ProfileHeader({ username, origin, description }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-5 text-center">
+    <header className="flex flex-col items-center justify-center gap-5 text-center">
       <div className="space-y-1">
-        <h1 className="text-[var(--text-white)] font-bold text-[1.8em] sm:text-[1.4em]">
+        <h1 className="text-(--text-white) font-bold text-[1.8rem] sm:text-[1.6rem]">
           {username}
         </h1>
-        <h2 className="text-[var(--text-green)] font-semibold text-[1em] text-center sm:text-[.8em]">
+        <p className="text-(--text-green) font-semibold text-[.9rem] text-center sm:text-[1rem]">
           {origin}
-        </h2>
+        </p>
       </div>
 
-      <p className="text-[var(--text-white)] text-[1em] sm:text-[.8em]">
+      <p className="text-(--text-white) text-[.9rem] sm:text-[1rem]">
         {description ? `"${description}".` : ""}
       </p>
-    </div>
+    </header>
   );
 }
 

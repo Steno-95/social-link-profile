@@ -9,7 +9,7 @@ const links = [
   {
     id: 1,
     text: "Frontend Mentor",
-    link: "",
+    link: "https://www.frontendmentor.io/profile/Steno-95",
   },
   {
     id: 2,
@@ -30,13 +30,13 @@ const links = [
 
 function Menu() {
   return (
-    <div className="flex flex-col gap-3 items-center justify-center">
+    <ul className="flex flex-col gap-3 items-center justify-center">
       {links.map((link) => (
         <Button href={link.link} key={link.id}>
           {link.text}
         </Button>
       ))}
-    </div>
+    </ul>
   );
 }
 

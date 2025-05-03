@@ -3,11 +3,11 @@ import Menu from "./Components/MenuLinks/Menu";
 import Profile from "./Components/Profile/Profile";
 import ProfileHeader from "./Components/Profile/ProfileHeader";
 import ProfilePicture from "./Components/Profile/ProfilePicture";
-import Footer from "./Footer";
+import Footer from "./ui/Footer";
 
 function App() {
   return (
-    <main className="h-dvh w-dvw flex flex-col">
+    <div className="min-h-dvh min-w-dvw flex flex-col">
       <Card>
         <Profile>
           <ProfilePicture img={"avatar-jessica.jpeg"} />
@@ -20,7 +20,7 @@ function App() {
         <Menu />
       </Card>
       <Footer />
-    </main>
+    </div>
   );
 }
 
